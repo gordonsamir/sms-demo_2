@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>demoSite</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="myStyle.css">
+</head>
+
+<body>
+  <h1>SMS Demo</h1>
+  <form>
+    <div class="form-group">
+
+      <legend>
+        <h2>Details</h2>
+      </legend>
+
+      <p>
+        <label>Customer ID</label>
+        <br>
+        <input type="text" id="custId" value="Paste cust ID here" />
+      </p>
+
+      <p>
+        <label>Agent ID </label>
+        <br>
+        <input type="text" id="agentId" value="Paste Agent ID here" />
+      </p>
+
+      <p>
+      <div class="SMS-group">
+        <label for="DemoSelect">SMS Demo select</label>
+        <select class="form-control" id="smstype" >
+          <option value="0"> </option>
+          <option value="1">Reminder</option>
+          <option value="2">Verifications</option>
+          <option value="3">TakeUp</option>
+          <option value="4">OfferReminder</option>
+          <option value="5">SpousalConsent</option>
+        </select>
+      </div>
+      </p>
+
+      <p>
+        <button type="button" onclick=myFunction()>Submit</button>
+
+      </p>
+
+    </div>
+
+  </form>
+
+  <script>
+    function myFunction(select) {
+      alert(custId.value);
+      console.log(custId.value);
+
+      alert(agentId.value);
+      console.log(agentId.value);
+
+      alert(smstype.value);
+      console.log(smstype.value);
+
+      if (smstype.value === "1") {
+        alert("This is a reminder sms");
+        console.log("This is a reminder sms");
+      } else if (smstype.value === "2") {
+        alert("Please send your docs");
+        console.log("Please send your docs");
+      } else if (smstype.value === "3") {
+        alert("Your money will be paid soon soon");
+        console.log("Your money will be paid soon soon");
+      } else if (smstype.value === "4") {
+        article("We still have an offer available to you");
+        console.log("We still have an offer available to you");
+      } else if (smstype.value === "5") {
+        alert("May your spouse say yes");
+        console.log("May your spouse say yes");
+      }
+
+    }
+
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>
